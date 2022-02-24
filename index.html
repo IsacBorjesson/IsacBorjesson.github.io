@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper side-panel-open">
+        <div class="container">
+            <div class="header">
+                Welcome to WestCoast Education
+            </div>
+            <div class="content-large">
+                <div>
+                    <h1>Welcome User</h1>
+                    <p>
+                        On this website you can view our avalible courses 
+                        if you navigate to the Courses-Page on the right 
+                        hand side.
+                    </p>
+                    <p>
+                        You could also Login to your account or make on.
+                    </p>
+                    <p>
+                        Contacting us is just on klick away. You can choose between
+                        contacting your future theacher or us in manegement at the school.
+                        Looking forward to hearing from you!
+
+                    </p>
+                </div>
+            </div>
+            <div class="content-small">
+                Contact School
+              <div class="Contact__message Contact__message--error"></div>
+                <div class="Contact__input-group">
+                  <input type="text" id="Id" class="add__Email" autofocus placeholder="Your Email Adress">
+                <div class="Contact__input-error-message"></div>
+              </div>
+              <div class="Contact__input-group">
+                <input type="text" id="add_Message" class="Contact__input" autofocus placeholder="Message">
+                <div class="Contact__input-error-message"></div>
+              </div>
+              <button class="Contact__button" type="submit">Send</button>
+            </div>
+            <div class="content-small">
+                <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="./pages/courses.html">Courses</a></li>
+              <li><a href="./pages/login.html">Login</a></li>
+            </div>
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".side-panel-toggle").addEventListener("click", () => {
+            document.querySelector(".wrapper").classList.toggle("side-panel-open");
+        });
+    </script>
+</body>

@@ -3,5 +3,11 @@
     [1,"Erik Petterson", "English", "erik@mail.com"],
     [2,"Gunilla Andersson", "Algebrah", "gunilla@mail.com"],
     [3,"Karin Gardell", "PE", "karin@mail.com"],
-    [4,"Ulrica Nilsson", "C# 1a", "ulrica@mail.com"]
+    [4,"Ulrica Nilsson", "C# 1a", "ulrica@mail.com"],
+    [0,"Anders Nilsson", "Swedish", "anders@mail.com"],
+    [1,"Erik Petterson", "English", "erik@mail.com"],
+    [2,"Gunilla Andersson", "Algebrah", "gunilla@mail.com"],
+    [3,"Karin Gardell", "PE", "karin@mail.com"],
+    [4,"Ulrica Nilsson", "C# 1a", "ulrica@mail.com"],
+    [0,"Anders Nilsson", "Swedish", "anders@mail.com"]
 ]

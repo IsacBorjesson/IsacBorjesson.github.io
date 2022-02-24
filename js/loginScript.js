@@ -6,7 +6,7 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.add(`form__message--${type}`);
 
     if(type == "success"){
-        window.location = "../pages/index.html";
+        window.location = "../index.html";
     }
 }
 

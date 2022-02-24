@@ -65,6 +65,7 @@ body{
 /* Table */
 /*  */
 
+
 .active{
     color:black;
 }
@@ -127,5 +128,9 @@ body{
     .content-small{
         width: 110px;
     }
+    .content{
+        width: 95px;
+    }
+   
   }
 

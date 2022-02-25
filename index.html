@@ -12,7 +12,11 @@
     <div class="wrapper side-panel-open">
         <div class="container">
             <div class="header">
-                Welcome to WestCoast Education
+                <div class="topnav"> 
+                    <a class="active" href="./index.html">Home</a>
+                    <a href="./Pages/courses.html">Courses</a>
+                    <a href="./Pages/login.html">Login</a>
+                  </div>
             </div>
             <div class="content-large">
                 <div>
@@ -47,16 +51,9 @@
               <button class="Contact__button" type="submit">Send</button>
             </div>
             <div class="content-small">
-                <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="./pages/courses.html">Courses</a></li>
-              <li><a href="./pages/login.html">Login</a></li>
+                
             </div>
             <div class="footer">Footer</div>
         </div>
     </div>
-    <script>
-        document.querySelector(".side-panel-toggle").addEventListener("click", () => {
-            document.querySelector(".wrapper").classList.toggle("side-panel-open");
-        });
-    </script>
 </body>

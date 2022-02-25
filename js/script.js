@@ -1,5 +1,7 @@
 const rankingsBody = document.querySelector("#rankings-table > tbody");
-      
+const test = document.querySelector("#myItemList > ul");
+
+const array = []
 function loadRankings() {
     const request = new XMLHttpRequest();
 
@@ -34,15 +36,48 @@ function populateRanklings(json) {
     });
 }
 
-function editRankings(json){
-    document.querySelectorAll(".edit__input").forEach(inputElement => {
-        inputElement.addEventListener("blur", e => {
-            if (e.target.id === "edit_Name" && e.target.value.length > 0) {
-                json[1][1] = e.target.value;
-            }
+function populateCheckout(array) {
+    var test = document.getElementById("myItemList");
 
-        });
+    while (test.firstChild)
+        test.removeChild(test.firstChild);
+
+    let items = [
+        'Blue',
+        'Red',
+        'White',
+        'Green',
+        'Black',
+        'Orange'
+    ],
+    ul = document.createElement('ul');
+
+
+    document.getElementById('myItemList').appendChild(ul);
+
+
+    array.forEach(function (item) {
+        let li = document.createElement('li');
+        ul.appendChild(li);
+
+        li.innerHTML += item;
     });
 }
 
+function editRankings(json){
+    console.log(json)
+    var searchId 
+    
+    document.querySelectorAll(".content").forEach(inputElement => {
+    inputElement.addEventListener("blur", e => {
+        if (e.target.id === "Id" && e.target.value > -1 && e.target.value < json.length && e.target.value.length > 0) {
+            searchId = e.target.value;
+            console.log(searchId)
+            array.push(json[searchId][2])
+            populateCheckout(array);
+        }
+    })
+})
+
+}
 document.addEventListener("DOMContentLoaded", () => { loadRankings(); });

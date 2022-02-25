@@ -12,7 +12,11 @@
     <div class="wrapper side-panel-open">
         <div class="container">
             <div class="header">
-              List of all our courses
+              <div class="topnav"> 
+                <a href="../index.html">Home</a>
+                <a class="active" href="./courses.html">Courses</a>
+                <a href="./login.html">Login</a>
+              </div>
             </div>
             <div class="content-large">
               <table id="rankings-table" class="table">
@@ -31,27 +35,17 @@
               <script src="../js/script.js"></script>
             </div>
             <div class="content-small">
-              Add
-              <div class="edit__message edit__message--error"></div>
+              Add course to checkout
+              
+                <div class="edit__message edit__message--error"></div>
                 <div class="edit__input-group">
                   <input type="text" id="Id" class="content" autofocus placeholder="Id">
-                <div class="edit__input-error-message"></div>
-              </div>
-              <div class="edit__input-group">
-                <input type="text" id="add_Name" class="content" autofocus placeholder="Name">
-                <div class="edit__input-error-message"></div>
-              </div>
-              <div class="edit__input-group">
-                <input type="text" id="Course" class="content" autofocus placeholder="Course">
-                <div class="edit__input-error-message"></div>
-              </div>
-              <div class="edit__input-group">
-                <input type="text" id="Email"class="content" autofocus placeholder="Emil">
-                <div class="edit__input-error-message"></div>
-              </div>
-              <button class="edit__button" type="submit">Continue</button>
+                  <div class="edit__input-error-message"></div>
+                </div>
+                <button class="edit__button" type="submit">Continue</button>
+             
               <hr>
-              Edit
+              Add new courses to list
               <div class="edit__message edit__message--error"></div>
               <div class="edit__input-group">
                 <input type="text" id="Id" class="content" autofocus placeholder="Id">
@@ -72,17 +66,16 @@
               <button class="edit__button" type="submit">Continue</button>
             </div>
             <div class="content-small">
-              <li><a href="../index.html">Home</a></li>
-              <li class="active"><a href="courses.html">Courses</a></li>
-              <li><a href="login.html">Login</a></li>
+              <h1>Courses</h1>
+              <div >
+                <ul id="myItemList">
+                  <li>hej</li>
+                </ul>
+              </div>
+              
             </div>
             <div class="footer">footer</div>
         </div>
     </div>
-    <script>
-        document.querySelector(".side-panel-toggle").addEventListener("click", () => {
-            document.querySelector(".wrapper").classList.toggle("side-panel-open");
-        });
-    </script>
 </body>
 </html>

@@ -42,40 +42,86 @@
                   <input type="text" id="Id" class="content" autofocus placeholder="Id">
                   <div class="edit__input-error-message"></div>
                 </div>
-                <button class="edit__button" type="submit">Continue</button>
+                <button class="edit__button">Continue</button>
              
               <hr>
               Add new courses to list
-              <div class="edit__message edit__message--error"></div>
+              <form>
+                <div class="edit__message edit__message--error"></div>
               <div class="edit__input-group">
-                <input type="text" id="Id" class="content" autofocus placeholder="Id">
+                <input type="text" id="new_Id" class="content" autofocus placeholder="Id">
                 <div class="edit__input-error-message"></div>
               </div>
               <div class="edit__input-group">
-                <input type="text" id="edit_Name" class="content" autofocus placeholder="Name">
+                <input type="text" id="new_Name" class="content" autofocus placeholder="Name">
                 <div class="edit__input-error-message"></div>
                </div>
               <div class="edit__input-group">
-                <input type="text" id="Course" class="content" autofocus placeholder="Course">
+                <input type="text" id="new_Course" class="content" autofocus placeholder="Course">
                 <div class="edit__input-error-message"></div>
                </div>
               <div class="edit__input-group">
-                <input type="text" id="Email"class="content" autofocus placeholder="Emil">
+                <input type="text" id="new_Email"class="content" autofocus placeholder="Emil">
                 <div class="edit__input-error-message"></div>
               </div>
-              <button class="edit__button" type="submit">Continue</button>
+              <button type="submit">Continue</button>
             </div>
+              </form>
+              
             <div class="content-small">
               <h1>Courses</h1>
-              <div >
-                <ul id="myItemList">
-                  <li>hej</li>
-                </ul>
+              <!-- trigger the mPopup -->
+             <a href="javascript:void(0);" id="mpopupLink">Checkout</a>
+
+             <!-- mPopup box -->
+             <div id="mpopupBox" class="mpopup">
+                 <!-- mPopup content -->
+                 <div class="mpopup-content">
+                     <div class="mpopup-head">
+                         <span class="close">×</span>
+                         <h2>Thanks for the purchase</h2>
+                     </div>
+                     <div class="mpopup-main">
+                         <p>You will get an email with information</p>
+                         <p>See you soon!</p>
+                     </div>
+                     <div class="mpopup-foot">
+                         <p>WestCoast Education</p>
+                     </div>
+                 </div>
+             </div>
+              <div id="myItemList">
               </div>
-              
             </div>
             <div class="footer">footer</div>
         </div>
     </div>
+    <script>
+      // get the mPopup
+      var mpopup = document.getElementById('mpopupBox');
+
+      // get the link that opens the mPopup
+      var mpLink = document.getElementById("mpopupLink");
+
+      // get the close action element
+      var close = document.getElementsByClassName("close")[0];
+
+      // open the mPopup once the link is clicked
+      mpLink.onclick = function() {
+          mpopup.style.display = "block";
+      }
+
+      // close the mPopup once close element is clicked
+      close.onclick = function() {
+          mpopup.style.display = "none";
+      }
+
+      // close the mPopup when user clicks outside of the box
+      window.onclick = function(event) {
+          if (event.target == mpopup) {
+              mpopup.style.display = "none";
+          }
+      }
+    </script>
 </body>
 </html>

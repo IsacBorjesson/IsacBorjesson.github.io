@@ -97,7 +97,6 @@ function populateCheckout() {
     
 }
 function myFunction(index){
-    console.log(index)
     array.splice(index,1)
     populateCheckout()
 }
@@ -106,7 +105,6 @@ function myFunction(index){
     
 
 function addToCheckout(json){
-    console.log(json)
     var searchId 
     
     document.querySelectorAll(".content").forEach(inputElement => {
